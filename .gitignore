@@ -1,0 +1,48 @@
+# --- Python / Backend ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.env
+backend/.env
+backend/storage/
+
+# --- Node / Frontend ---
+node_modules/
+frontend/dist/
+frontend/.env
+.vite/
+
+# --- ML ---
+ml_models/weights/*.pt
+ml_models/weights/*.pth
+!ml_models/weights/README.md
+
+# --- Dataset (do not commit real patient images) ---
+dataset/train/
+dataset/val/
+dataset/fundus/*
+dataset/oct/*
+!dataset/fundus/.gitkeep
+!dataset/oct/.gitkeep
+!dataset/README.md
+
+# --- OS / Editor ---
+.DS_Store
+.vscode/
+.idea/
+*.log
+
+# --- Generated ML evaluation ---
+ml_models/evaluation/
+
+# --- Local project analysis files ---
+project_inventory.csv
+project_analysis.txt
+
+# --- Generated analysis ---
+ml_models/evaluation/
+project_inventory.csv
+project_analysis.txt
